@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "kaizen-app",
+    "slug": "kaizen-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.kaizen-app",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true,
+          "NSExceptionDomains": {
+            "supabase.co": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": false,
+              "NSExceptionMinimumTLSVersion": "TLSv1.0",
+              "NSExceptionRequiresForwardSecrecy": false
+            }
+          }
+        }
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.kaizenapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "scheme": "kaizen",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true,
+          "useSQLCipher": false
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite escolher uma foto de perfil da sua galeria.",
+          "cameraPermission": "Permite tirar uma foto de perfil."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "O Kaizen precisa de acesso à sua localização para te lembrar das tarefas no momento certo.",
+          "locationAlwaysPermission": "Permite que o app te notifique mesmo quando estiver em segundo plano.",
+          "locationWhenInUsePermission": "Necessário para detectar quando você chega ou sai de um local.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}

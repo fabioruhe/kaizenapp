@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-expo-app@latest . --template blank-typescript)",
+      "Bash(npx create-expo-app@latest kaizen-app --template blank-typescript)",
+      "Bash(npx expo:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(wc -l /Users/fabio.ruhe/Documents/Kaizen/kaizen-app/components/*.tsx)",
+      "Bash(while read:*)",
+      "Bash(do wc:*)",
+      "Bash(done)",
+      "Bash(node /Users/fabio.ruhe/Documents/Kaizen/kaizen-app/node_modules/react-native-reanimated/scripts/validate-worklets-build.js)",
+      "Bash(xcrun simctl:*)",
+      "Bash(node -e \"require\\(''nativewind/metro''\\)\")",
+      "Bash(grep -r className= --include=*.tsx --include=*.ts src/ app/ components/ store/ utils/ db/)",
+      "Bash(node -e \":*)",
+      "Bash(node -e \"require\\(''expo-image-picker''\\); console.log\\(''ok''\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\(''''expo'''',{}\\).get\\(''''plugins'''',[]\\), indent=2\\)\\)\")",
+      "Bash(node -e \"const f = require\\(''''/Users/fabio.ruhe/Documents/Kaizen/kaizen-app/node_modules/expo-file-system/build/index.js''''\\); console.log\\(Object.keys\\(f\\).filter\\(k=>k.toLowerCase\\(\\).includes\\(''''dir''''\\)\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\(''''main'''',''''''''\\), d.get\\(''''exports'''',{}\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[''''dependencies''''].get\\(''''@react-native-async-storage/async-storage'''',''''not found''''\\), d[''''dependencies''''].get\\(''''@supabase/supabase-js'''',''''not found''''\\)\\)\")"
+    ]
+  }
+}
